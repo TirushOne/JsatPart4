@@ -41,7 +41,7 @@ for (let i = 0; i < movies.length; i++) {
     movies[randomIndex] = temp;
 }
 
-movies.sort((a, b) => a - b);
+movies.sort((a, b) => a.movieId - b.movieId);
 console.log(JSON.stringify(movies));
 
 //the movie search function. takes a movie array and a target movie id
