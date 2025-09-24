@@ -15,17 +15,17 @@ class Movie {
 
 //the movies we will be manipulating
 let movies = [
-    Movie("movie a", 1999, 7),
-    Movie("movie b", 2000, 2),
-    Movie("movie c", 2001, 4),
-    Movie("movie d", 2002, 0),
-    Movie("movie e", 2003, 10),
-    Movie("movie g", 2004, 10),
-    Movie("movie h", 2005, 5),
-    Movie("movie i", 2006, 6),
-    Movie("movie j", 2007, 3),
-    Movie("movie k", 2008, 1),
-    Movie("movie l", 2009, 4)
+    new Movie("movie a", 1999, 7),
+    new Movie("movie b", 2000, 2),
+    new Movie("movie c", 2001, 4),
+    new Movie("movie d", 2002, 0),
+    new Movie("movie e", 2003, 10),
+    new Movie("movie g", 2004, 10),
+    new Movie("movie h", 2005, 5),
+    new Movie("movie i", 2006, 6),
+    new Movie("movie j", 2007, 3),
+    new Movie("movie k", 2008, 1),
+    new Movie("movie l", 2009, 4)
 ];
 
 console.log(JSON.stringify(movies[0]));
