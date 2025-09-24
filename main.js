@@ -28,6 +28,9 @@ let movies = [
     Movie("movie l", 2009, 4)
 ];
 
+console.log(JSON.stringify(movies[0]));
+console.log(JSON.stringify(movies));
+
 //movie id is sorted by default, so the array is randomised
 for (let i = 0; i < movies.length; i++) {
     //a random index within the bounds of the array
@@ -39,6 +42,7 @@ for (let i = 0; i < movies.length; i++) {
 }
 
 movies.sort((a, b) => a - b);
+console.log(JSON.stringify(movies));
 
 //the movie search function. takes a movie array and a target movie id
 //and returns it if found, or null if not found.
@@ -52,4 +56,9 @@ function search(movies, targetId) {
 
     return null;
 }
+
+//finding a target movie id
+console.log(JSON.stringify(search(movies, 0)));
+//not finding a target movie
+console.log(JSON.stringify(search(movies, 10)));
 
