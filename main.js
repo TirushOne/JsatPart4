@@ -60,5 +60,5 @@ function search(movies, targetId) {
 //finding a target movie id
 console.log(JSON.stringify(search(movies, 0)));
 //not finding a target movie
-console.log(JSON.stringify(search(movies, 10)));
+console.log(JSON.stringify(search(movies, 11)));
 
