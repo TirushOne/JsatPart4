@@ -1,4 +1,7 @@
 class Movie {
+    //a static variable accocated with this class
+    //that is automaticley increamented and assigned when a new instance is created,
+    //keeping each movie id unqiue.
     static currentMaxMovieId = 0;
 
     constructor(title, year, rating) {
@@ -10,6 +13,7 @@ class Movie {
     }
 }
 
+//the movies we will be manipulating
 let movies = [
     Movie("movie a", 1999, 7),
     Movie("movie b", 2000, 2),
@@ -26,7 +30,9 @@ let movies = [
 
 //movie id is sorted by default, so the array is randomised
 for (let i = 0; i < movies.length; i++) {
+    //a random index within the bounds of the array
     let randomIndex = Math.floor(Math.random() * movies.length) % movies.length;
+    //a place to store the value we are going to swap before
     let temp = movies[i];
     movies[i] = movies[randomIndex];
     movies[randomIndex] = temp;
@@ -34,6 +40,9 @@ for (let i = 0; i < movies.length; i++) {
 
 movies.sort((a, b) => a - b);
 
+//the movie search function. takes a movie array and a target movie id
+//and returns it if found, or null if not found.
+//implimented using sequencial search.
 function search(movies, targetId) {
     for (let i = 0; i < movies.length; i++) {
         if (movies[i].movieId == targetId) {
