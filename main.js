@@ -22,9 +22,11 @@ let movies = [
     new Movie("movie l", 2009, 4, -8)
 ];
 
+
 console.log(JSON.stringify(movies[0]));
 console.log(JSON.stringify(movies));
 
+console.log(JSON.stringify(movies[0]));
 movies.sort((a, b) => a.movieId - b.movieId);
 console.log(JSON.stringify(movies));
 
@@ -41,6 +43,7 @@ function search(movies, targetId) {
     return null;
 }
 
+console.log(JSON.stringify(movies[0]));
 //finding a target movie id
 console.log(JSON.stringify(search(movies, 0)));
 //not finding a target movie
