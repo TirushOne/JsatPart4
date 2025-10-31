@@ -16,17 +16,15 @@ let movies = [
     new Movie("movie e", 2003, 10, 11),
     new Movie("movie g", 2004, 10, 23),
     new Movie("movie h", 2005, 5, 15),
-    new Movie("movie i", 2006, 6, -3),
-    new Movie("movie j", 2007, 3, 0),
-    new Movie("movie k", 2008, 1, 74),
-    new Movie("movie l", 2009, 4, -8)
+    new Movie("movie i", 2006, 6, 7),
+    new Movie("movie j", 2007, 3, 8),
+    new Movie("movie k", 2008, 1, 9),
+    new Movie("movie l", 2009, 4, 10)
 ];
-
 
 console.log(JSON.stringify(movies[0]));
 console.log(JSON.stringify(movies));
 
-console.log(JSON.stringify(movies[0]));
 movies.sort((a, b) => a.movieId - b.movieId);
 console.log(JSON.stringify(movies));
 
@@ -43,10 +41,9 @@ function search(movies, targetId) {
     return null;
 }
 
-console.log(JSON.stringify(movies[0]));
 //finding a target movie id
 console.log(JSON.stringify(search(movies, 0)));
 //not finding a target movie
-console.log(JSON.stringify(search(movies, 11)));
+console.log(JSON.stringify(search(movies, 200)));
 
 //comment from dev branch
