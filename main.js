@@ -16,7 +16,7 @@ let movies = [
     new Movie("movie e", 2003, 10, 11),
     new Movie("movie g", 2004, 10, 23),
     new Movie("movie h", 2005, 5, 15),
-    new Movie("movie i", 2006, 6, 7),
+    new Movie("movie i", 2006, 6, 0),
     new Movie("movie j", 2007, 3, 8),
     new Movie("movie k", 2008, 1, 9),
     new Movie("movie l", 2009, 4, 10)
